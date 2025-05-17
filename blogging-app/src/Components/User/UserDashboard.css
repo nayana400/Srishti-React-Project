@@ -1,0 +1,41 @@
+.user-dashboard {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .user-sidebar {
+    width: 220px;
+    margin-top: 100px;
+    background-color: #f8f9fa;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+   
+    
+  }
+  
+  .user-sidebar .nav-link {
+    color: #000;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  .nav-link:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .user-sidebar button {
+    margin-top: 20px;
+  }
+  
+  .user-main-content {
+    flex-grow: 1;
+    padding: 20px;
+    margin-top: 100px;
+  }
+  
+  .card {
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
