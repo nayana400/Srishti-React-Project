@@ -23,7 +23,8 @@ function AdminLogin() {
       localStorage.setItem("adminId", "681f8f889115defe7dc24758"); // Real MongoDB admin _id
 
       setLoggedIn(true);
-    } else {
+    } 
+    else {
       alert("❌ Invalid admin credentials");
     }
   };

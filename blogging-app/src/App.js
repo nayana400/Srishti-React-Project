@@ -45,6 +45,7 @@ function App() {
         <Route path="/userview-one-blog" element={<UserViewOneBlog />} />
 
         <Route path="/login" element={<Login />} />
+        
         <Route path="/user-dashboard" element={<UserDashboard />} >
          <Route index element={<UserViewAllBlogs />} /> 
           <Route path="userview-all-blogs" element={<UserViewAllBlogs />} />
@@ -54,6 +55,7 @@ function App() {
        </Route>
 
         <Route path="/adminlogin" element={<AdminLogin/>} />
+        
         <Route path="/admin-dashboard" element={<AdminDashboard/>}>
         <Route index element={<Statistics />} /> 
         <Route path="view-all-users" element={<ViewAllUsers />} />     
@@ -66,11 +68,7 @@ function App() {
         <Route path="/view-one-blog" element={<ViewOneBlog/>} />
         <Route path="/edit-blog" element={<EditBlog/>} />
         <Route path="/admin-logout" element={<AdminLogout/>} />
-        
-
-        
-
-
+      
 
       </Routes>
      

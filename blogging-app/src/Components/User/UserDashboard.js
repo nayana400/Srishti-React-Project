@@ -12,7 +12,8 @@ const UserDashboard = () => {
   useEffect(() => {
     if (!userId) return navigate("/login");
 
-    axios.post(`http://localhost:3002/Blog/ViewOneUser/${userId}`)
+    axios
+      .post(`http://localhost:3002/Blog/ViewOneUser/${userId}`)
       .then((res) => {
         const data = res.data.data;
         if (Array.isArray(data) && data.length > 0) {
@@ -31,29 +32,36 @@ const UserDashboard = () => {
 
   return (
     <div className="user-dashboard d-flex">
-
-    <UserNavbar />
+      <UserNavbar />
       <aside className="user-sidebar p-3 bg-light">
         <h5>Welcome, {userName}!</h5>
         <ul className="nav flex-column mt-4">
-          <li><Link to="userprofile" className="nav-link">MyProfile</Link></li>
-          <li><Link to="edit-profile" className="nav-link">Edit Profile</Link></li>
-          <li><Link to="reset-password" className="nav-link">Change Password</Link></li>
-          <li><Link to="userview-all-blogs" className="nav-link">View Blogs</Link></li>
+          <li>
+            <Link to="userprofile" className="nav-link">
+              MyProfile
+            </Link>
+          </li>
+          <li>
+            <Link to="edit-profile" className="nav-link">
+              Edit Profile
+            </Link>
+          </li>
+          <li>
+            <Link to="reset-password" className="nav-link">
+              Change Password
+            </Link>
+          </li>
+          <li>
+            <Link to="userview-all-blogs" className="nav-link">
+              View Blogs
+            </Link>
+          </li>
         </ul>
       </aside>
       <main className="user-main-content">
-              <Outlet />
-            </main>
-    
-    
-    
-    
-    
-    
-    
-    
-            </div>
+        <Outlet />
+      </main>
+    </div>
   );
 };
 

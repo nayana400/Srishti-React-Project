@@ -80,16 +80,13 @@ const ViewOneUser = (req, res) => {
     UserSchema.find({ _id: req.params.id })
         .then((result) => {
             res.json({
-                message: "View A Users",
+                message: "View All Users",
                 data: result
             })
         })
         .catch((error) => {
             console.log(error);
         })
-
-
-
 }
 const EditUser = (req, res) => {
     let datas = {

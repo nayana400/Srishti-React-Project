@@ -6,7 +6,7 @@ const AdminLogout = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    localStorage.removeItem("isAdminLoggedIn");
+    localStorage.removeItem("adminLoggedIn");
     navigate("/adminlogin");
   }, [navigate]);
 

@@ -10,7 +10,8 @@ const ViewAllBlogs = () => {
       .then((res) => {
         if (res.data && res.data.data) {
           setBlogs(res.data.data);
-        } else {
+        } 
+        else {
           console.log("No data found");
         }
       })
