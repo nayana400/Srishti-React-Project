@@ -36,7 +36,7 @@ Others: Axios, Multer, React Router, LocalStorage
 
 Clone the repository:
 
-git clone https://github.com/yourusername/blogging-app.git
+git clone <repo-url>
 
 
 Backend:
